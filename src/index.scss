@@ -1,0 +1,128 @@
+/* Chat Pair Style Start */
+
+/* ==================== 尾尖朝右的气泡（A 回答） ==================== */
+/* 对话气泡基础样式 - 去除引用块默认样式 */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair] {
+    position: relative;
+    background-color: #e3f2fd !important;
+    border-radius: 12px 12px 0 12px !important;
+    padding: 12px 16px !important;
+    margin: 8px 0 8px 40px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    /* 去除引用块的左边框和默认样式 */
+    border-left: none !important;
+    /* 为尾尖添加阴影效果 */
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+/* 去除引用块的伪元素（左边框） */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair]::before {
+    display: none !important;
+}
+
+/* 尾尖朝右 */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair]::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #e3f2fd;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+/* 深色模式 - 尾尖朝右 */
+html[data-theme-mode="dark"] .protyle-wysiwyg div[data-node-id].bq[custom-chat-pair] {
+    background-color: #1e3a5f !important;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+html[data-theme-mode="dark"] .protyle-wysiwyg div[data-node-id].bq[custom-chat-pair]::after {
+    border-left-color: #1e3a5f;
+}
+
+/* ==================== 尾尖朝左的气泡（Q 问题） ==================== */
+/* 对话气泡基础样式 - 左侧 */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left] {
+    position: relative;
+    background-color: #f5f5f5 !important;
+    border-radius: 12px 12px 12px 0 !important;
+    padding: 12px 16px !important;
+    margin: 8px 40px 8px 0 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    border-left: none !important;
+    /* 为尾尖添加阴影效果 */
+    filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+/* 去除引用块的伪元素（左边框） */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left]::before {
+    display: none !important;
+}
+
+/* 尾尖朝左 */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left]::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #f5f5f5;
+    border-top: 10px solid transparent;
+    border-bottom: 0 solid transparent;
+}
+
+/* 深色模式 - 尾尖朝左 */
+html[data-theme-mode="dark"] .protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left] {
+    background-color: #3a3a3a !important;
+    filter: drop-shadow(-1px 1px 1px rgba(0, 0, 0, 0.3));
+}
+
+html[data-theme-mode="dark"] .protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left]::after {
+    border-right-color: #3a3a3a;
+}
+
+/* ==================== 内部段落样式（通用） ==================== */
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair] > .p,
+.protyle-wysiwyg div[data-node-id].bq[custom-chat-pair-left] > .p {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ==================== Q&A 超级块容器 ==================== */
+.protyle-wysiwyg div[data-node-id].sb[custom-chat-pair-container] {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 8px 0 !important;
+    border: none !important;
+}
+
+/* 超级块内的气泡间距调整 */
+.protyle-wysiwyg div[data-node-id].sb[custom-chat-pair-container] > .bq {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+}
+
+.protyle-wysiwyg div[data-node-id].sb[custom-chat-pair-container] > .bq:first-child {
+    margin-top: 0 !important;
+}
+
+.protyle-wysiwyg div[data-node-id].sb[custom-chat-pair-container] > .bq:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* 深色模式 - 超级块容器 */
+html[data-theme-mode="dark"] .protyle-wysiwyg div[data-node-id].sb[custom-chat-pair-container] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Chat Pair Style End */

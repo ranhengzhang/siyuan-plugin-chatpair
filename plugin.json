@@ -1,10 +1,10 @@
 {
-  "name": "plugin-sample-vite-svelte",
-  "author": "frostime",
-  "url": "https://github.com/siyuan-note/plugin-sample-vite-svelte",
-  "version": "0.4.1",
+  "name": "siyuan-plugin-chatpair",
+  "author": "ranhengzhang",
+  "url": "https://github.com/ranhengzhang/siyuan-plugin-chatpair",
+  "version": "1.0.0",
   "minAppVersion": "3.2.1",
-  "disabledInPublish": true,
+  "disabledInPublish": false,
   "backends": [
     "windows",
     "linux",
@@ -22,12 +22,12 @@
     "desktop-window"
   ],
   "displayName": {
-    "default": "Plugin sample with vite and svelte",
-    "zh_CN": "插件样例 vite + svelte 版"
+    "default": "Chat Pair Plugin",
+    "zh_CN": "对话气泡插件"
   },
   "description": {
-    "default": "SiYuan plugin sample with vite and svelte",
-    "zh_CN": "使用 vite 和 svelte 开发的思源插件样例"
+    "default": "Insert chat bubbles with Q&A pairs in SiYuan notes",
+    "zh_CN": "在思源笔记中插入对话气泡和问答对"
   },
   "readme": {
     "default": "README.md",
@@ -37,12 +37,16 @@
     "openCollective": "",
     "patreon": "",
     "github": "",
-    "custom": [
-      "https://ld246.com/sponsor"
-    ]
+    "custom": []
   },
   "keywords": [
-    "sample",
-    "示例"
+    "ai",
+    "chat",
+    "conversation",
+    "bubble",
+    "对话",
+    "气泡",
+    "Q&A",
+    "问答"
   ]
 }
