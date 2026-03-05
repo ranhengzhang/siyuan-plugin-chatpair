@@ -32,6 +32,7 @@ export default class PluginSample extends Plugin {
             {
                 filter: [
                     "chat pair right",
+                    "answer",
                     "对话气泡右",
                     "dhqpy"
                 ],
@@ -47,6 +48,7 @@ export default class PluginSample extends Plugin {
             {
                 filter: [
                     "chat pair left",
+                    "question",
                     "对话气泡左",
                     "dhqpz"
                 ],
