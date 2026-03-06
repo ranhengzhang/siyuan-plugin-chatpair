@@ -1,6 +1,6 @@
 # Chat Pair Plugin for SiYuan
 
-[中文版](./README_zh_CN.md)
+[中文版](https://github.com/ranhengzhang/siyuan-plugin-chatpair/blob/main/README.md)
 
 A SiYuan plugin for displaying AI conversations with chat bubbles and Q&A pairs.
 

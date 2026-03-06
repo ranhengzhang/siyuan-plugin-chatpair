@@ -1,6 +1,6 @@
 # 思源对话气泡插件
 
-[English Version](./README.md)
+[English Version](https://github.com/ranhengzhang/siyuan-plugin-chatpair/blob/main/README_en_US.md)
 
 一个用于在思源笔记中显示 AI 对话的插件，支持对话气泡和问答对。
 

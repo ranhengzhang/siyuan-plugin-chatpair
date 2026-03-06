@@ -2,24 +2,14 @@
   "name": "siyuan-plugin-chatpair",
   "author": "ranhengzhang",
   "url": "https://github.com/ranhengzhang/siyuan-plugin-chatpair",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minAppVersion": "3.2.1",
   "disabledInPublish": false,
   "backends": [
-    "windows",
-    "linux",
-    "darwin",
-    "ios",
-    "android",
-    "harmony",
-    "docker"
+    "all"
   ],
   "frontends": [
-    "desktop",
-    "mobile",
-    "browser-desktop",
-    "browser-mobile",
-    "desktop-window"
+    "all"
   ],
   "displayName": {
     "default": "对话气泡插件",
