@@ -28,11 +28,11 @@ export default class PluginSample extends Plugin {
                     protyle.insert(`<div data-node-id="${idSuper}" data-type="NodeSuperBlock" class="sb" updated="${idSuper.split('-')[0]}" custom-chat-pair-container="true"><div data-node-id="${idA}" data-type="NodeBlockquote" class="bq" updated="${idA.split('-')[0]}" custom-chat-pair="true"><div data-node-id="${idAPara}" updated="${idAPara.split('-')[0]}" data-type="NodeParagraph" class="p"><div contenteditable="true" spellcheck="false"></div><div class="protyle-attr" contenteditable="false">​</div></div><div class="protyle-attr" contenteditable="false">​</div></div><div data-node-id="${idQ}" data-type="NodeBlockquote" class="bq" updated="${idQ.split('-')[0]}" custom-chat-pair-left="true"><div data-node-id="${idQPara}" updated="${idQPara.split('-')[0]}" data-type="NodeParagraph" class="p"><div contenteditable="true" spellcheck="false"></div><div class="protyle-attr" contenteditable="false">​</div></div><div class="protyle-attr" contenteditable="false">​</div></div><div class="protyle-attr" contenteditable="false">​</div></div>`, true);
                 }
             },
-            // 单独的尾尖朝右的气泡（A 回答）
+            // 单独的尾尖朝右的气泡（Q 问题）
             {
                 filter: [
                     "chat pair right",
-                    "answer",
+                    "question",
                     "对话气泡右",
                     "dhqpy"
                 ],
@@ -44,11 +44,11 @@ export default class PluginSample extends Plugin {
                     protyle.insert(`<div data-node-id="${idBq}" data-type="NodeBlockquote" class="bq" updated="${idBq.split('-')[0]}" custom-chat-pair="true"><div data-node-id="${idPara}" updated="${idPara.split('-')[0]}" data-type="NodeParagraph" class="p"><div contenteditable="true" spellcheck="false"></div><div class="protyle-attr" contenteditable="false">​</div></div><div class="protyle-attr" contenteditable="false">​</div></div>`, true);
                 }
             },
-            // 单独的尾尖朝左的气泡（Q 问题）
+            // 单独的尾尖朝左的气泡（A 回答）
             {
                 filter: [
                     "chat pair left",
-                    "question",
+                    "answer",
                     "对话气泡左",
                     "dhqpz"
                 ],

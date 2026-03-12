@@ -2,7 +2,7 @@
   "name": "siyuan-plugin-chatpair",
   "author": "ranhengzhang",
   "url": "https://github.com/ranhengzhang/siyuan-plugin-chatpair",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "minAppVersion": "3.2.1",
   "disabledInPublish": false,
   "backends": [
